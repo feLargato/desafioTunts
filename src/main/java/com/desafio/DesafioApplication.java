@@ -62,13 +62,8 @@ public class DesafioApplication {
 		return new Sheets.Builder(GoogleNetHttpTransport.newTrustedTransport(),
 				JacksonFactory.getDefaultInstance(), credential).setApplicationName(APPLICATION_NAME).build();
 	}
-	
-	
 
 	public static void main(String[] args) {
-		System.out.println("------------------------------------------------------\n" + 
-	                       "Starting application \n" + 
-				           "------------------------------------------------------");
 		SpringApplication.run(DesafioApplication.class, args);
 	}
 
